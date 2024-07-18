@@ -1,0 +1,31 @@
+{
+  "name": "@az33zy/config",
+  "version": "0.1.0",
+  "description": "Opinionated configuration for JavaScript projects",
+  "license": "MIT",
+  "repository": "az33zy/config",
+  "funding": "https://github.com/az33zy/config?sponsor=1",
+  "author": "az33zy",
+  "type": "module",
+  "exports": {
+    "./prettier": "./prettier/index.js",
+    "./prettier/svelte": "./prettier/svelte.js"
+  },
+  "scripts": {
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "config",
+    "prettier"
+  ],
+  "dependencies": {
+    "prettier-plugin-svelte": "^3.2.6",
+    "prettier-plugin-tailwindcss": "^0.6.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  },
+  "prettier": "./prettier/index.js",
+  "packageManager": "pnpm@9.5.0"
+}
